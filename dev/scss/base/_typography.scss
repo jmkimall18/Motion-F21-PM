@@ -1,6 +1,11 @@
 /* =============
     Typography
 ============= */
+
+body{
+
+    font-family: 'Roboto', sans-serif;
+}
 h1,h2,h3,h4{
     margin: 0;
     padding: 0;
@@ -12,6 +17,12 @@ p{
 }
 
 h1{
+    font-family: 'Work Sans', sans-serif;
     font-size: rem-calc(100);
-    color: red;
+    color:black;
+}
+
+h2{
+    font-family: 'Exo 2', sans-serif;
+
 }

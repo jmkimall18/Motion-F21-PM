@@ -365,24 +365,13 @@ ul li {
   list-style: none;
 }
 
-.container-grid {
-  display: grid;
-  grid-template-areas: ". grid-content .";
-  grid-template-columns: 15px auto 15px;
-  height: 100vh;
-}
-@media (min-width: 1200px) {
-  .container-grid {
-    grid-template-columns: auto 1200px auto;
-  }
-}
-.container-grid > div {
-  grid-area: grid-content;
-}
-
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 h1, h2, h3, h4 {
   margin: 0;
   padding: 0;
@@ -394,8 +383,13 @@ p {
 }
 
 h1 {
+  font-family: "Work Sans", sans-serif;
   font-size: 6.25rem;
-  color: red;
+  color: black;
+}
+
+h2 {
+  font-family: "Exo 2", sans-serif;
 }
 
 /* =============
