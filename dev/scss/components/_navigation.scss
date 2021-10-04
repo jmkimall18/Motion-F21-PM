@@ -1,3 +1,37 @@
 /* =============
     Navigation
 ============= */
+nav{
+
+    ul{
+        display: flex;
+        justify-content: flex-end;
+        height: 100%;
+        align-items: center;
+
+
+        li{
+            margin-top: 30px;
+            margin-left: 5vw;
+            margin-right: 20px;
+
+            a:link,
+        a:visited {
+           
+           
+            transition: 0.25s;
+
+            
+            color: black;
+            &:hover,
+            &:active {
+                color:#B7A99C;
+                ;
+            }
+
+
+        }
+
+        }
+    }
+}
