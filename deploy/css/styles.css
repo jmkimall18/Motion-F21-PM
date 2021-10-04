@@ -431,6 +431,9 @@ nav ul li {
 }
 nav ul li a:link,
 nav ul li a:visited {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
   transition: 0.25s;
   color: black;
 }
@@ -462,3 +465,115 @@ header > div aside {
 /* =============
     Footer
 ============= */
+#hero {
+  height: 130vh;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 60px;
+}
+#hero include xl {
+  display: grid;
+  grid-template-areas: ". hero .";
+  grid-template-columns: auto 2500px auto;
+}
+#hero > div {
+  align-items: center;
+  background-image: url("../img/hero/Hero.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  height: 100%;
+}
+@media (min-width: 1200px) {
+  #hero > div {
+    grid-area: hero;
+  }
+}
+#hero > div i {
+  font-size: 100px;
+  font-weight: 100;
+  margin-top: 1000px;
+  margin-left: -50px;
+  text-align: center;
+  color: black;
+}
+#hero > div i:hover, #hero > div i:active {
+  color: wheat;
+}
+#hero > div #hero-content {
+  color: black;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 870px;
+}
+#hero > div #hero-content h1 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+}
+@media (min-width: 768px) {
+  #hero > div #hero-content h1 {
+    font-size: 4.375rem;
+  }
+}
+@media (min-width: 992px) {
+  #hero > div #hero-content h1 {
+    font-size: 5.625rem;
+  }
+}
+#hero > div #hero-content h2 {
+  font-family: "Exo 2", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+}
+@media (min-width: 768px) {
+  #hero > div #hero-content h2 {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 992px) {
+  #hero > div #hero-content h2 {
+    font-size: 1.875rem;
+  }
+}
+
+#info i {
+  font-size: 100px;
+  font-weight: 100;
+  margin-left: 30px;
+  margin-top: -45px;
+  text-align: center;
+  color: black;
+}
+#info i:hover, #info i:active {
+  color: wheat;
+}
+#info ul {
+  margin: 50px;
+  grid-area: info;
+}
+#info ul h1 {
+  text-align: right;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  font-size: 24px;
+}
+@media (min-width: 768px) {
+  #info ul h1 {
+    font-size: 30px;
+  }
+}
+#info ul p {
+  font-size: 16px;
+  text-align: justify;
+  padding-right: 70px;
+  padding-left: 70px;
+}
+@media (min-width: 768px) {
+  #info ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "p1 p2";
+  }
+}

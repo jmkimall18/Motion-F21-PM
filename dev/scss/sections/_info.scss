@@ -1,0 +1,76 @@
+#info{
+
+   
+
+
+    i{
+        font-size: 100px;
+        font-weight: 100;
+      margin-left: 30px;
+      margin-top: -45px;
+       text-align: center;
+          
+            
+        color:black;
+        &:hover,
+        &:active {
+            color:wheat;
+            ;
+        }
+
+       }
+
+       ul{
+        margin: 50px;
+        
+
+        grid-area: info;
+
+
+        h1{
+            text-align: right;
+            padding-bottom: 20px;
+            padding-top: 40px;
+            font-size: 24px;
+
+            @include md{
+                font-size: 30px;
+            }
+
+            
+
+        }
+
+        p{
+            font-size: 16px;
+            text-align: justify;
+            padding-right: 70px;
+            padding-left: 70px;
+
+            
+        }
+        
+        
+       
+        
+        @include md{
+           
+            display: grid;
+            grid-template-columns: 50% auto; 
+            grid-template-areas: 
+            "p1 p2"
+            
+                }
+
+
+
+       }
+
+       
+
+        
+
+
+
+
+}
