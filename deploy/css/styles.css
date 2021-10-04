@@ -462,9 +462,48 @@ header > div aside {
   display: inline-block;
 }
 
-/* =============
-    Footer
-============= */
+footer {
+  grid-area: footer;
+  background-color: #f5e4cc;
+  display: grid;
+  grid-template-columns: 20px auto 20px;
+  grid-template-areas: ". footer .";
+  justify-content: center;
+}
+footer ul {
+  font-size: 1.875rem;
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+footer ul li a {
+  color: #000;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  font-size: 40px;
+}
+@media (min-width: 768px) {
+  footer ul li a {
+    font-size: 12px;
+  }
+}
+@media (min-width: 992px) {
+  footer ul li a {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1200px) {
+  footer ul li a {
+    font-size: 14px;
+  }
+}
+footer ul li a:hover, footer ul li a:active {
+  color: #B7A99C;
+}
+
 #hero {
   height: 130vh;
   width: 100%;
@@ -489,17 +528,6 @@ header > div aside {
     grid-area: hero;
   }
 }
-#hero > div i {
-  font-size: 100px;
-  font-weight: 100;
-  margin-top: 1000px;
-  margin-left: -50px;
-  text-align: center;
-  color: black;
-}
-#hero > div i:hover, #hero > div i:active {
-  color: wheat;
-}
 #hero > div #hero-content {
   color: black;
   text-align: left;
@@ -509,7 +537,6 @@ header > div aside {
 #hero > div #hero-content h1 {
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
-  text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
 }
 @media (min-width: 768px) {
   #hero > div #hero-content h1 {
@@ -524,6 +551,7 @@ header > div aside {
 #hero > div #hero-content h2 {
   font-family: "Exo 2", sans-serif;
   font-size: 1.25rem;
+  padding-left: 10px;
   font-weight: 300;
   text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
 }
@@ -538,12 +566,16 @@ header > div aside {
   }
 }
 
+#info {
+  background-color: #fffdf9;
+}
 #info i {
   font-size: 100px;
   font-weight: 100;
   margin-left: 30px;
   margin-top: -45px;
   text-align: center;
+  text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
   color: black;
 }
 #info i:hover, #info i:active {
@@ -554,9 +586,12 @@ header > div aside {
   grid-area: info;
 }
 #info ul h1 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
   text-align: right;
   padding-bottom: 20px;
   padding-top: 40px;
+  padding-right: 65px;
   font-size: 24px;
 }
 @media (min-width: 768px) {
@@ -565,10 +600,11 @@ header > div aside {
   }
 }
 #info ul p {
-  font-size: 16px;
+  font-size: 18px;
   text-align: justify;
   padding-right: 70px;
   padding-left: 70px;
+  line-height: 30px;
 }
 @media (min-width: 768px) {
   #info ul {
@@ -576,4 +612,181 @@ header > div aside {
     grid-template-columns: 50% auto;
     grid-template-areas: "p1 p2";
   }
+}
+
+#coffee ul {
+  margin: 50px;
+  grid-area: coffee;
+}
+@media (min-width: 768px) {
+  #coffee ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "sec1 visit";
+  }
+}
+#coffee ul #sec1 img {
+  height: 400px;
+  width: 600px;
+}
+#coffee ul #visit {
+  padding-top: 30px;
+}
+#coffee ul #visit h1 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  text-align: left;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-left: 65px;
+  font-size: 40px;
+}
+@media (min-width: 768px) {
+  #coffee ul #visit h1 {
+    font-size: 40px;
+  }
+}
+#coffee ul p {
+  font-size: 18px;
+  text-align: justify;
+  padding-right: 70px;
+  padding-left: 65px;
+  line-height: 30px;
+}
+#coffee ul button {
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 50px;
+  padding-bottom: 16px;
+  padding-top: 30px;
+  transition: 0.25s;
+  border-radius: 2px;
+  padding: 3px 6px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 40px;
+  padding-left: 65px;
+  background-color: white;
+  border: none;
+  color: black;
+}
+@media (min-width: 768px) {
+  #coffee ul button {
+    text-align: right;
+    display: flex-end;
+  }
+}
+@media (min-width: 768px) {
+  #coffee ul button {
+    margin-top: 30px;
+  }
+}
+#coffee ul button:hover, #coffee ul button:active {
+  color: #B7A99C;
+}
+
+#beans ul {
+  margin: 50px;
+  grid-area: beans;
+}
+@media (min-width: 768px) {
+  #beans ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "sec2 whole";
+  }
+}
+#beans ul #sec2 img {
+  height: 400px;
+  width: 590px;
+}
+#beans ul #whole {
+  padding-top: 30px;
+}
+#beans ul #whole h1 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  text-align: left;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-left: 65px;
+  font-size: 40px;
+}
+@media (min-width: 768px) {
+  #beans ul #whole h1 {
+    font-size: 40px;
+  }
+}
+#beans ul p {
+  font-size: 18px;
+  text-align: justify;
+  padding-right: 70px;
+  padding-left: 65px;
+  line-height: 30px;
+}
+#beans ul button {
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 50px;
+  padding-bottom: 16px;
+  padding-top: 30px;
+  transition: 0.25s;
+  border-radius: 2px;
+  padding: 3px 6px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 40px;
+  padding-left: 65px;
+  background-color: white;
+  border: none;
+  color: black;
+}
+@media (min-width: 768px) {
+  #beans ul button {
+    text-align: right;
+    display: flex-end;
+  }
+}
+@media (min-width: 768px) {
+  #beans ul button {
+    margin-top: 30px;
+  }
+}
+#beans ul button:hover, #beans ul button:active {
+  color: #B7A99C;
+}
+
+#background ul {
+  grid-area: back;
+}
+@media (min-width: 768px) {
+  #background ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "sec3 more";
+  }
+}
+#background ul #more {
+  padding-top: 30px;
+}
+#background ul #more h2 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  text-align: right;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-right: 120px;
+  font-size: 30px;
+}
+@media (min-width: 768px) {
+  #background ul #more h2 {
+    font-size: 30px;
+  }
+}
+#background ul p {
+  font-size: 18px;
+  text-align: justify;
+  padding-right: 120px;
+  padding-left: 65px;
+  line-height: 30px;
 }
