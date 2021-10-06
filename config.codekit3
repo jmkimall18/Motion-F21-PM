@@ -47,6 +47,32 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/glow\/coffee.png" : {
+      "ft" : 32768,
+      "iS" : 188528,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/glow\/coffee.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/glow\/Vibrance 1.png" : {
+      "ft" : 32768,
+      "iS" : 194762,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/glow\/Vibrance 1.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/hero\/Hero.jpg" : {
       "ft" : 16384,
       "iS" : 3701238,
@@ -56,6 +82,19 @@
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/hero\/Hero2.jpg" : {
+      "ft" : 16384,
+      "iS" : 3577188,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/hero\/Hero2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75

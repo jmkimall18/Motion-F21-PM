@@ -14,8 +14,22 @@
 
    >div{
 
+    #glow{
+
+        img{
+           position: absolute;
+           display: flex;
+           width: 1850.24px;
+           height: 1250.12px;
+           left: -78px;
+           top: -630px;
+           
+          
+            }
+    }
+
     align-items: center;
-    background-image: url("../img/hero/Hero.jpg");
+    background-image: url("../img/hero/Hero2.jpg");
     background-position: center;
     background-size: cover;
     display: flex;

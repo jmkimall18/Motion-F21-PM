@@ -7,6 +7,11 @@ const mainTL = gsap.timeline();
 
 mainTL.from("#hero", {duration:2,alpha:0, scale:1}) 
 
+mainTL.from("#glow", {duration:3,alpha:0, scale:1, blink: 4, fadeout: 800 }) 
+
+.from("#glow", {fadeout: (100), fadein: (100)})
+
+
 mainTL.from("#hero-content", {duration:2,alpha:0, scale:2}) 
 
 .from("#info",{duration:2,y:"+=500", alpha:0}) 
