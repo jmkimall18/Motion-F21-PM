@@ -522,19 +522,23 @@ footer ul li a:hover, footer ul li a:active {
   background-size: cover;
   display: flex;
   height: 100%;
-}
-#hero > div #glow img {
-  position: absolute;
-  display: flex;
-  width: 1850.24px;
-  height: 1250.12px;
-  left: -78px;
-  top: -630px;
+  position: relative;
 }
 @media (min-width: 1200px) {
   #hero > div {
     grid-area: hero;
   }
+}
+#hero > div #glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 1px solid red;
+  background-image: url("../img/glow/Vibrance 1.png");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
 }
 #hero > div article #hero-content {
   color: black;

@@ -14,19 +14,19 @@
 
    >div{
 
-    #glow{
+    // #glow{
 
-        img{
-           position: absolute;
-           display: flex;
-           width: 1850.24px;
-           height: 1250.12px;
-           left: -78px;
-           top: -630px;
+    //     img{
+    //        position: absolute;
+    //        display: flex;
+    //        width: 1835.24px;
+    //        height: 1200.12px;
+    //        left: -86px;
+    //        top: -597px;
            
           
-            }
-    }
+    //         }
+    // }
 
     align-items: center;
     background-image: url("../img/hero/Hero2.jpg");
@@ -34,11 +34,25 @@
     background-size: cover;
     display: flex;
     height: 100%;
+
+    position: relative;
     
 
     @include xl{
         grid-area: hero;
     } 
+
+    #glow{
+        position: absolute;
+        top: 0;
+        left:0;
+        width: 100%;
+        border: 1px solid red;
+        background-image: url("../img/glow/Vibrance 1.png");
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+    }
 
     article{
 
