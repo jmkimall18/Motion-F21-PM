@@ -352,6 +352,10 @@ template {
 /* =============
     Base
 ============= */
+.gs-dev-tools {
+  z-index: 1500;
+}
+
 figure {
   margin: 0;
   padding: 0;
@@ -509,17 +513,25 @@ footer ul li a:hover, footer ul li a:active {
   height: 100vh;
   width: 100%;
   z-index: 1000;
-  background-color: white;
-}
-#preloader > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+  background-color: #F7F1F0;
 }
 #preloader > div svg {
   border: none;
+}
+#preloader > div svg #Coffee {
+  display: none;
+}
+#preloader > div svg #Tea_Cup {
+  display: none;
+}
+#preloader > div svg #Coffee_Bean {
+  display: none;
+}
+#preloader > div svg #French_Press {
+  display: none;
+}
+#preloader > div svg #French_Press {
+  display: none;
 }
 
 #hero {

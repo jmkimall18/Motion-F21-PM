@@ -1,7 +1,23 @@
 import { gsap } from "gsap";
 
+import { GSDevTools } from "gsap/GSDevTools";
+
+gsap.registerPlugin(GSDevTools);
+
 
 const mainTL = gsap.timeline();
+
+function First_Dots(){
+
+    const tl = gsap.timeline();
+    tl.to("#Vector",{duration:6, scale:1, y:"-=100"});
+    return tl;
+
+    
+}
+
+mainTL.add(First_Dots());
+
 
 
 
@@ -24,6 +40,8 @@ mainTL.from("#sec1",{duration:1,alpha:0})
 mainTL.from("#sec2",{duration:1,alpha:0}) 
 
 .from("#sec3",{duration:1,x:"-=100", alpha:0}) 
+
+GSDevTools.create();
 
 
 
