@@ -504,6 +504,23 @@ footer ul li a:hover, footer ul li a:active {
   color: #B7A99C;
 }
 
+#preloader {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+}
+#preloader > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#preloader > div svg {
+  border: none;
+}
+
 #hero {
   height: 130vh;
   width: 100%;
@@ -534,7 +551,7 @@ footer ul li a:hover, footer ul li a:active {
   top: 0;
   left: 0;
   width: 100%;
-  border: 1px solid red;
+  border: none;
   background-image: url("../img/glow/Vibrance 1.png");
   background-position: center;
   background-size: cover;
