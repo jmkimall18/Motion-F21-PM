@@ -1,5 +1,7 @@
 #preloader{
 
+   
+
 position: absolute;
 height: 100vh;
 width: 100%;
@@ -9,15 +11,28 @@ background-color: #F7F1F0;
 
 >div {
 
-//display: flex;
-//justify-content: center;
-//align-items: center;
-//width: 100%;
-//height: 100%;//
+position: absolute;
+display: flex;
+justify-content: center;
+
+align-items: center;
+width: 100%;
+height: 100%;
 
 svg{
+    position: absolute;
+display: flex;
+justify-content: center;
+
+align-items: center;
+width: 100%;
+height: 100%;
 
 border: none;
+
+#Glass{
+    display: flex;
+}
 
 #Coffee{
     display: none;
@@ -38,10 +53,13 @@ border: none;
     display: none;
 }
 
-#French_Press{
+#Coffee_Maker{
 
     display: none;
 }
+
+
+
 
 
 
