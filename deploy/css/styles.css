@@ -361,6 +361,26 @@ figure {
   padding: 0;
 }
 
+.hide {
+  display: none;
+}
+
+#Vector6 {
+  display: none;
+}
+
+.hide2 {
+  display: none;
+}
+
+.hide3 {
+  display: none;
+}
+
+.ball2 {
+  display: none;
+}
+
 ul {
   margin: 0;
   padding: 0;
