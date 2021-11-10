@@ -84,7 +84,7 @@ function Third_Dots(){
     tl.to(".new", {duration: .5, morphSVG:"#bottom"},);
     tl.from("#hat", {opacity: 0},);
     tl.from("#square", {opacity: 0},);
-    tl.from("#balling",  {duration:.1,y:"-=800", alpha:0})
+    tl.from("#balling",  {duration: 2,y:"-=800", alpha:0})
     tl.to("#balling", {duration: 2, morphSVG:"#drop"},);
 
 
