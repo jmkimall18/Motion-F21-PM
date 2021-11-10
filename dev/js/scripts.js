@@ -33,7 +33,7 @@ const tl = gsap.timeline({repeat: 0});
     tl.from("#Vector8", {opacity: 0},);
     tl.to("#Vector5", {duration: .5, morphSVG:"#Vector8"},);
     tl.to("#Glass", {duration: .5, morphSVG:"#Vector6"},);
-    tl.to("#Vector7", {duration:.5, ease: 1, y:"+=33"},);
+    tl.to("#Vector7", {duration:.5, y:"+=33"},);
     tl.to("#Vector5", {duration: .5, morphSVG:"#Sauce"},);
     tl.to("#Vector7", {duration: .5, morphSVG:"#Cup", y:"-=33"},);
     tl.to("#Glass", {duration:.5, ease: 1, y:"+=33"},);
@@ -41,9 +41,9 @@ const tl = gsap.timeline({repeat: 0});
     tl.from("#steam_2", {duration: .75, drawSVG:"100% 100%", stagger: 0.5, fillOpacity:1 })
     tl.from("#steam_4", {duration: .75, drawSVG:"100% 100%", stagger: 0.5, fillOpacity:1 })
     tl.from("#steam_3", {duration: .75, drawSVG:"100% 100%", stagger: 0.5, fillOpacity:1 })
-    tl.to(".st", {duration: .75, morphSVG:"#Base2"},);
-    tl.from("#Vector5", {duration: .75,opacity: 0},);
-    tl.from("#Vector33", {opacity: 0},);
+    tl.to(".st", {duration: .15, morphSVG:"#Base2"},);
+    tl.from("#Vector5", {duration: .15,opacity: 0},);
+    tl.from("#Vector33", {opacity: 0,duration: .70},);
     
     
 return tl;
@@ -52,9 +52,9 @@ return tl;
 function Second_Dots(){
     const tl = gsap.timeline({repeat: 0});
     tl.to("#Vector7", {opacity: 0},);
-    tl.to("#Vector33", {duration: .5, morphSVG:"#Outline"},);
-    tl.from("#Outline", {duration: .5, drawSVG:"50% 50%", stagger: 0.5, fillOpacity:1 })
-    tl.from("#Vector33", {duration: .5, opacity: 0, ease: 3},);
+    tl.to("#Vector33", {duration: .25, morphSVG:"#Outline"},);
+    tl.from("#Outline", {duration: .25, drawSVG:"50% 50%", stagger: 0.5, fillOpacity:1 })
+    tl.from("#Vector33", {duration: .25, opacity: 0, ease: 3},);
     tl.from(".new",  {duration:.5,y:"-=800", alpha:0})
     tl.from(".new", {duration: .5, morphSVG:"#Vector66"},);
     tl.to("#Outline", {duration: .5, morphSVG:"#Vectorrr"},);
@@ -85,7 +85,7 @@ function Third_Dots(){
     tl.from("#hat", {opacity: 0},);
     tl.from("#square", {opacity: 0},);
     tl.from("#balling",  {duration:.75,y:"-=800", alpha:0})
-    tl.to("#balling", {duration: 1, morphSVG:"#drop"},);
+    tl.to("#balling", {duration: 3, morphSVG:"#drop"},);
 
 
 
@@ -142,6 +142,8 @@ mainTL
 
 
 GSDevTools.create();
+
+
 
 
 
