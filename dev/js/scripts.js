@@ -17,9 +17,9 @@ const mainTL = gsap.timeline();
 function First_Dots(){
 const tl = gsap.timeline({repeat: 0});
 
-    tl.to(".ball", {repeat: 1, duration: 1, ease: CustomEase.create("bounce", "M0,0 C0.126,0.382 0.282,0.496 0.44,0.644 0.632,0.824 0.818,0.001 1,0 "), y: -100,  stagger:0.5 });
-    tl.to("#Vector_3", { duration: 1, ease:  CustomEase.create("custom", "M0,0 C0.082,-0.114 0.78,1 1,1 "), y: +500 }, "same");
-    tl.to("#Vector_2", { duration: 1, ease:  CustomEase.create("custom", "M0,0 C0.082,-0.114 0.78,1 1,1 "), y: +500 }, "same");
+    tl.to(".ball", {repeat: 1, duration: .75, ease: CustomEase.create("bounce", "M0,0 C0.126,0.382 0.282,0.496 0.44,0.644 0.632,0.824 0.818,0.001 1,0 "), y: -100,  stagger:0.5 });
+    tl.to("#Vector_3", { duration: .75, ease:  CustomEase.create("custom", "M0,0 C0.082,-0.114 0.78,1 1,1 "), y: +500 }, "same");
+    tl.to("#Vector_2", { duration: .75, ease:  CustomEase.create("custom", "M0,0 C0.082,-0.114 0.78,1 1,1 "), y: +500 }, "same");
     tl.to("#Vector", {duration:1, ease: 1, x:"+=30"},"same");
     tl.to("#Vector", {opacity: 0});
     tl.from("#Glass", {duration: .5, drawSVG:"60% 60%", stagger: 0.5})
@@ -52,9 +52,9 @@ return tl;
 function Second_Dots(){
     const tl = gsap.timeline({repeat: 0});
     tl.to("#Vector7", {opacity: 0},);
-    tl.to("#Vector33", {duration: .25, morphSVG:"#Outline"},);
-    tl.from("#Outline", {duration: .25, drawSVG:"50% 50%", stagger: 0.5, fillOpacity:1 })
-    tl.from("#Vector33", {duration: .25, opacity: 0, ease: 3},);
+    tl.to("#Vector33", {duration: .5, morphSVG:"#Outline"},);
+    tl.from("#Outline", {duration: .5, drawSVG:"50% 50%", stagger: 0.5, fillOpacity:1 })
+    tl.from("#Vector33", {duration: .5, opacity: 0, ease: 3},);
     tl.from(".new",  {duration:.5,y:"-=800", alpha:0})
     tl.from(".new", {duration: .5, morphSVG:"#Vector66"},);
     tl.to("#Outline", {duration: .5, morphSVG:"#Vectorrr"},);
@@ -84,8 +84,8 @@ function Third_Dots(){
     tl.to(".new", {duration: .5, morphSVG:"#bottom"},);
     tl.from("#hat", {opacity: 0},);
     tl.from("#square", {opacity: 0},);
-    tl.from("#balling",  {duration:.75,y:"-=800", alpha:0})
-    tl.to("#balling", {duration: 3, morphSVG:"#drop"},);
+    tl.from("#balling",  {duration:.1,y:"-=800", alpha:0})
+    tl.to("#balling", {duration: 2, morphSVG:"#drop"},);
 
 
 
@@ -141,7 +141,7 @@ mainTL
 .add(heroanimation());
 
 
-GSDevTools.create();
+//GSDevTools.create();
 
 
 
