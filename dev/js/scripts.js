@@ -24,20 +24,20 @@ const tl = gsap.timeline({repeat: 0});
     tl.to("#Vector", {duration: .5,opacity: 0});
     tl.from("#Glass", {duration: .5, drawSVG:"60% 60%", stagger: 0.5})
     tl.from("#Vector5",  {duration:.25,y:"-=800", alpha:0})
-    tl.to("#Vector5", {duration: .5, morphSVG:"#Coffee_2"});
+    tl.to("#Vector5", {duration: .35, morphSVG:"#Coffee_2"});
     tl.from("#top",  {duration:0.15,alpha:0,})
-    tl.from("#top", {duration: .5, drawSVG:"50% 65%", fillOpacity:1 })
+    tl.from("#top", {duration: .35, drawSVG:"50% 65%", fillOpacity:1 })
     tl.to("#top", {duration: .3, opacity: 0},);
-    tl.from("#Vector7", {duration: .4,opacity: 0}, );
-    tl.to("#Vector5", {duration: .4, morphSVG:"#Glass"},);
-    tl.from("#Vector8", {duration: .4,opacity: 0},);
-    tl.to("#Vector5", {duration: .4, morphSVG:"#Vector8"},);
-    tl.to("#Glass", {duration: .4, morphSVG:"#Vector6"},);
-    tl.to("#Vector7", {duration:.4, y:"+=33"},);
+    tl.from("#Vector7", {duration: .3,opacity: 0}, );
+    tl.to("#Vector5", {duration: .3, morphSVG:"#Glass"},);
+    tl.from("#Vector8", {duration: .3,opacity: 0}, "same");
+    tl.to("#Vector5", {duration: .3, morphSVG:"#Vector8"},);
+    tl.to("#Glass", {duration: .3, morphSVG:"#Vector6"},);
+    tl.to("#Vector7", {duration:.3, y:"+=33"},);
     tl.to("#Vector5", {duration: .4, morphSVG:"#Sauce"},);
     tl.to("#Vector7", {duration: .4, morphSVG:"#Cup", y:"-=33"},);
     tl.to("#Glass", {duration:.4, ease: 1, y:"+=33"},);
-    tl.to("#Glass", {duration:.4, opacity: 0},);
+    tl.to("#Glass", {duration:.3, opacity: 0},);
     tl.from("#steam_2", {duration: .3, drawSVG:"100% 100%", stagger: 0.5, fillOpacity:1 })
     tl.from("#steam_4", {duration: .3,drawSVG:"100% 100%", stagger: 0.5, fillOpacity:1 })
     tl.from("#steam_3", {duration: .3, drawSVG:"100% 100%", stagger: 0.5, fillOpacity:1 })
@@ -57,11 +57,11 @@ function Second_Dots(){
     tl.from("#Vector33", {duration: .5, opacity: 0, ease: 3},);
     tl.from(".new",  {duration:.5,y:"-=800", alpha:0})
     tl.from(".new", {duration: .5, morphSVG:"#Vector66"},);
-    tl.to("#Outline", {duration: .5, morphSVG:"#Vectorrr"},);
-    tl.from("#cap", {duration: .5,opacity: 0},);
-    tl.from(".same", {duration: .25,opacity: 0},);
-    tl.to(".st", {duration: .25,opacity: 0},);
-    tl.from("#contain", {duration: .25,opacity: 0},);
+    tl.to("#Outline", {duration: .25, morphSVG:"#Vectorrr"},);
+    tl.from("#cap", {duration: .25,opacity: 0},);
+    tl.from(".same", {duration: .25,opacity: 0}, );
+    tl.to(".st", {duration: .25,opacity: 0},"same");
+    tl.from("#contain", {duration: .25,opacity: 0},"same") ;
     tl.to(".new", {duration: .75, morphSVG:"#level2"}, "same");
     tl.to(".new", {duration: .75, morphSVG:"#level4"}, "same");
     tl.to(".new", {duration: .75, morphSVG:"#level5"},"same" );
@@ -77,11 +77,11 @@ function Second_Dots(){
 function Third_Dots(){
     const tl = gsap.timeline({repeat: 0});
 
-    tl.to("#add1", {duration: .25,opacity: 0},);
-    tl.to("#Outline", {duration: .25,opacity: 0},);
-    tl.to("#contain", {duration: .25,opacity: 0},);
-    tl.to("#cap", {duration: .5, morphSVG:"#base3"},);
-    tl.to(".new", {duration: .5, morphSVG:"#bottom"},);
+    tl.to("#add1", {duration: .35,opacity: 0},);
+    tl.to("#Outline", {duration: .35,opacity: 0},);
+    tl.to("#contain", {duration: .35,opacity: 0},);
+    tl.to("#cap", {duration: .35, morphSVG:"#base3"},"same");
+    tl.to(".new", {duration: .35, morphSVG:"#bottom"},"same");
     tl.from("#hat", {opacity: 0},);
     tl.from("#square", {opacity: 0},);
     tl.from("#balling",  {duration: 1,y:"-=800", alpha:0})
@@ -141,7 +141,7 @@ mainTL
 .add(heroanimation());
 
 
-GSDevTools.create();
+//GSDevTools.create();
 
 
 
