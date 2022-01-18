@@ -7,13 +7,26 @@ import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 
 
-console.log("this is working inside!");
-   
-function demoThing(){
-    console.log("this is working");
-   }
 
-   demoThing();
+
+import {demoThing} from"./scrollAnimation"
+import {photoTrigger} from"./scrollAnimation"
+import {photoTrigger1} from"./scrollAnimation"
+import {photoTrigger2} from"./scrollAnimation"
+
+
+demoThing ();
+
+
+window.addEventListener('load', function(){
+
+    photoTrigger ();
+    photoTrigger1 ();
+    photoTrigger2 ();
+
+});
+
+   
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -135,11 +148,11 @@ function heroanimation(){
 
 .from("#info",{duration:2,y:"+=500", alpha:0}) 
 
-.from("#sec1",{duration:1,alpha:0}) 
+//.from("#sec1",{duration:1,alpha:0}) 
 
-.from("#sec2",{duration:1,alpha:0}) 
+//.from("#sec2",{duration:1,alpha:0}) 
 
-.from("#sec3",{duration:1,x:"-=100", alpha:0}) 
+//.from("#sec3",{duration:1,x:"-=100", alpha:0}) 
 
 return tl;
 }
