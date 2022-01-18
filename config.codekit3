@@ -7,7 +7,7 @@
       "uuidString" : "8A9A69E6-1F73-48ED-870B-4C2477707C53"
     }
   ],
-  "creatorBuild" : "34214",
+  "creatorBuild" : "34264",
   "files" : {
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
@@ -377,6 +377,17 @@
       "oA" : 0,
       "oAP" : "\/deploy\/js\/scripts-min.js",
       "oF" : 2,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/dev\/js\/scrollAnimation.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/dev\/js\/scrollAnimation-min.js",
+      "oF" : 0,
       "sC" : 3,
       "tS" : 0
     },
@@ -1857,6 +1868,9 @@
       },
       "no-unused-labels" : {
         "active" : 1
+      },
+      "no-unused-private-class-members" : {
+        "active" : 0
       },
       "no-unused-vars" : {
         "active" : 1,

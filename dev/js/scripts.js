@@ -4,6 +4,18 @@ import { GSDevTools } from "gsap/GSDevTools";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import { CustomEase } from "gsap/CustomEase";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
+
+
+console.log("this is working inside!");
+   
+function demoThing(){
+    console.log("this is working");
+   }
+
+   demoThing();
+
+gsap.registerPlugin(ScrollTrigger);
 
 
 
@@ -22,25 +34,25 @@ const tl = gsap.timeline({repeat: 0});
     tl.to("#Vector_2", { duration: .5, ease:  CustomEase.create("custom", "M0,0 C0.082,-0.114 0.78,1 1,1 "), y: +500 }, "same");
     tl.to("#Vector", {duration: .5, ease: 1, x:"+=40"},"same");
     tl.to("#Vector", {duration: .5,opacity: 0});
-    tl.from("#Glass", {duration: .5, drawSVG:"60% 60%", stagger: 0.5})
-    tl.from("#Vector5",  {duration:.25,y:"-=800", alpha:0})
+    tl.from("#Glass", {duration: .5, drawSVG:"60% 60%", stagger: 0.5});
+    tl.from("#Vector5",  {duration:.25,y:"-=800", alpha:0});
     tl.to("#Vector5", {duration: .35, morphSVG:"#Coffee_2"});
-    tl.from("#top",  {duration:0.15,alpha:0,})
-    tl.from("#top", {duration: .35, drawSVG:"50% 65%", fillOpacity:1 })
-    tl.to("#top", {duration: .3, opacity: 0},);
-    tl.from("#Vector7", {duration: .3,opacity: 0}, );
-    tl.to("#Vector5", {duration: .3, morphSVG:"#Glass"},);
-    tl.from("#Vector8", {duration: .3,opacity: 0}, "same");
-    tl.to("#Vector5", {duration: .3, morphSVG:"#Vector8"},);
-    tl.to("#Glass", {duration: .3, morphSVG:"#Vector6"},);
-    tl.to("#Vector7", {duration:.3, y:"+=33"},);
+    tl.from("#top",  {duration:0.15,alpha:0,});
+    tl.from("#top", {duration: .35, drawSVG:"50% 65%", fillOpacity:1 });
+    tl.to("#top", {duration: .4, opacity: 0},);
+    tl.from("#Vector7", {duration: .4,opacity: 0}, );
+    tl.to("#Vector5", {duration: .4, morphSVG:"#Glass"},);
+    tl.from("#Vector8", {duration: .4,opacity: 0}, "same");
+    tl.to("#Vector5", {duration: .4, morphSVG:"#Vector8"},);
+    tl.to("#Glass", {duration: .4, morphSVG:"#Vector6"},);
+    tl.to("#Vector7", {duration:.4, y:"+=33"},);
     tl.to("#Vector5", {duration: .4, morphSVG:"#Sauce"},);
     tl.to("#Vector7", {duration: .4, morphSVG:"#Cup", y:"-=33"},);
     tl.to("#Glass", {duration:.4, ease: 1, y:"+=33"},);
     tl.to("#Glass", {duration:.3, opacity: 0},);
-    tl.from("#steam_2", {duration: .3, drawSVG:"100% 100%", stagger: 0.5, fillOpacity:1 })
-    tl.from("#steam_4", {duration: .3,drawSVG:"100% 100%", stagger: 0.5, fillOpacity:1 })
-    tl.from("#steam_3", {duration: .3, drawSVG:"100% 100%", stagger: 0.5, fillOpacity:1 })
+    tl.from("#steam_2", {duration: .3, drawSVG:"100% 100%", stagger: 0.5, fillOpacity:1 });
+    tl.from("#steam_4", {duration: .3,drawSVG:"100% 100%", stagger: 0.5, fillOpacity:1 });
+    tl.from("#steam_3", {duration: .3, drawSVG:"100% 100%", stagger: 0.5, fillOpacity:1 });
     tl.to(".st", {duration: .25, morphSVG:"#Base2"},);
     tl.from("#Vector5", {duration: .25,opacity: 0},);
     tl.from("#Vector33", {opacity: 0,duration: .15},);
