@@ -12,6 +12,11 @@ export function demoThing(){
 gsap.set("#sec1",{transformOrigin:"left center"});
 gsap.set("#sec2",{transformOrigin:"left center"});
 gsap.set("#sec3",{transformOrigin:"bottom center"});
+gsap.set("#info",{transformOrigin:"bottom center",  
+duration: 1,
+ease: 'power3.out'});
+
+
 
 export function photoTrigger(){
   const tl = new gsap.timeline();
@@ -59,6 +64,25 @@ export function photoTrigger(){
     scrub: true,
     markers: true
     }
+  
+  });
+   }
+
+   export function photoTrigger3(){
+    const tl = new gsap.timeline();
+  
+    tl.from("#info",{
+        duration:4, 
+        scaleY:0, 
+        scrollTrigger:{ 
+            start: "center center",
+            end: "bottom top",
+        trigger: "#hero",
+        toggleActions: "restart none resume none",
+        scrub: true,
+        markers: true
+        }
+      
   
   });
    }

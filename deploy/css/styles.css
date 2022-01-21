@@ -897,6 +897,9 @@ footer ul li a:hover, footer ul li a:active {
     grid-template-areas: "sec3 more";
   }
 }
+#background ul #sec3 img {
+  margin-bottom: -4px;
+}
 #background ul #more {
   padding-top: 30px;
 }

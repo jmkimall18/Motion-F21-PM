@@ -13,6 +13,8 @@ import {demoThing} from"./scrollAnimation"
 import {photoTrigger} from"./scrollAnimation"
 import {photoTrigger1} from"./scrollAnimation"
 import {photoTrigger2} from"./scrollAnimation"
+import {photoTrigger3} from"./scrollAnimation"
+
 
 
 demoThing ();
@@ -23,6 +25,7 @@ window.addEventListener('load', function(){
     photoTrigger ();
     photoTrigger1 ();
     photoTrigger2 ();
+    photoTrigger3 ();
 
 });
 
@@ -146,7 +149,7 @@ function heroanimation(){
 
 .from("#hero-content", {duration:2,alpha:0, scale:2}) 
 
-.from("#info",{duration:2,y:"+=500", alpha:0}) 
+//.from("#info",{duration:2,y:"+=500", alpha:0}) 
 
 //.from("#sec1",{duration:1,alpha:0}) 
 
