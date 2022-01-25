@@ -369,6 +369,17 @@
       "oAP" : "\/deploy\/index.html",
       "oF" : 2
     },
+    "\/dev\/js\/burgerAnimation.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/dev\/js\/burgerAnimation-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/dev\/js\/scripts.js" : {
       "bF" : 4,
       "ft" : 64,
@@ -719,7 +730,7 @@
   "projectAttributes" : {
     "creationDate" : 654453556.59066701,
     "displayValue" : "Kimball_Motion-F21-PM",
-    "displayValueWasSetByUser" : 0,
+    "displayValueWasSetByUser" : 1,
     "iconImageName" : "brackets-silver",
     "iconImageWasSetByUser" : 0
   },

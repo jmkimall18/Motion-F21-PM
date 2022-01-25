@@ -14,7 +14,7 @@ import {photoTrigger} from"./scrollAnimation"
 import {photoTrigger1} from"./scrollAnimation"
 import {photoTrigger2} from"./scrollAnimation"
 import {photoTrigger3} from"./scrollAnimation"
-
+import { burgerTL } from "./burgerAnimation";
 
 
 demoThing ();
@@ -26,8 +26,20 @@ window.addEventListener('load', function(){
     photoTrigger1 ();
     photoTrigger2 ();
     photoTrigger3 ();
+    burgerTL ();
 
 });
+
+
+var burgerButton = document.querySelector("#burger");
+
+burgerButton.addEventListener("click", () =>{
+    
+    burgerTL.play();
+});
+
+
+
 
    
 
@@ -109,7 +121,7 @@ function Third_Dots(){
     tl.to("#Outline", {duration: .35,opacity: 0});
     tl.to("#contain", {duration: .35,opacity: 0});
     tl.to("#cap", {duration: .35, morphSVG:"#base3"},"same");
-    tl.to(".new", {duration: .35, morphSVG:"#bottom"},"same");
+    tl.to(".new", {duration: .35, morphSVG:"#bot"},"same");
     tl.from("#hat", {opacity: 0});
     tl.from("#square", {opacity: 0});
     tl.from("#balling",  {duration: 1,y:"-=800", alpha:0})
@@ -169,7 +181,7 @@ mainTL
 .add(heroanimation());
 
 
-//GSDevTools.create();
+GSDevTools.create();
 
 
 
