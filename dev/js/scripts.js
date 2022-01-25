@@ -14,7 +14,10 @@ import {photoTrigger} from"./scrollAnimation"
 import {photoTrigger1} from"./scrollAnimation"
 import {photoTrigger2} from"./scrollAnimation"
 import {photoTrigger3} from"./scrollAnimation"
-import { burgerTL } from "./burgerAnimation";
+import { burgerTL } from "./burgerAnimation"
+import { displayWindowSize } from "./mobileResizing"
+import {menuAnimation} from "./mobileMenu";
+
 
 
 demoThing ();
@@ -27,17 +30,49 @@ window.addEventListener('load', function(){
     photoTrigger2 ();
     photoTrigger3 ();
     burgerTL ();
+    menuAnimation ();
+   
 
 });
 
 
 var burgerButton = document.querySelector("#burger");
 
-burgerButton.addEventListener("click", () =>{
-    
-    burgerTL.play();
-});
+let canIseeMenu = false;
 
+
+function openCloseMenu(){
+    if(canIseeMenu === false){
+       
+        burgerTL.play();
+        menuAnimation.play();
+        canIseeMenu = true;
+    }else{
+      
+        burgerTL.reverse();
+        menuAnimation.reverse();
+        canIseeMenu = false;
+    }
+}
+
+burgerButton.addEventListener("click", openCloseMenu);
+
+let navButtons = document.querySelectorAll(".nav-btns");
+
+for (const button of navButtons){
+    button.addEventListener("click", checkScrolling);
+    button.addEventListener("click", openCloseMenu);
+}
+
+
+
+function checkScrolling(e) {
+   
+    const indexValue = [].indexOf.call(navButtons, e.target)
+    if (indexValue != -1) {
+        scrollPage(indexValue);
+    }
+}
 
 
 
@@ -183,7 +218,8 @@ mainTL
 
 GSDevTools.create();
 
-
+window.addEventListener('load', displayWindowSize); 
+window.addEventListener("resize", displayWindowSize);
 
 
 
