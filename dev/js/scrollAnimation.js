@@ -16,6 +16,10 @@ gsap.set("#info",{transformOrigin:"bottom center",
 duration: 1,
 ease: 'power3.out'});
 
+gsap.set("#hero-content",{transformOrigin:"bottom center",  
+duration: 1,
+ease: 'power3.out'});
+
 
 
 export function photoTrigger(){
@@ -72,6 +76,25 @@ export function photoTrigger(){
     const tl = new gsap.timeline();
   
     tl.from("#info",{
+        duration:4, 
+        scaleY:0, 
+        scrollTrigger:{ 
+            start: "center center",
+            end: "bottom top",
+        trigger: "#hero",
+        toggleActions: "restart none resume none",
+        scrub: true,
+        markers: true
+        }
+      
+  
+  });
+   }
+
+   export function photoTrigger4(){
+    const tl = new gsap.timeline();
+  
+    tl.from("#hero-content",{
         duration:4, 
         scaleY:0, 
         scrollTrigger:{ 

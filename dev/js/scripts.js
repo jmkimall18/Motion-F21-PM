@@ -14,6 +14,7 @@ import {photoTrigger} from"./scrollAnimation"
 import {photoTrigger1} from"./scrollAnimation"
 import {photoTrigger2} from"./scrollAnimation"
 import {photoTrigger3} from"./scrollAnimation"
+import {photoTrigger4} from"./scrollAnimation"
 import { burgerTL } from "./burgerAnimation"
 import { displayWindowSize } from "./mobileResizing"
 import {menuAnimation} from "./mobileMenu";
@@ -29,6 +30,7 @@ window.addEventListener('load', function(){
     photoTrigger1 ();
     photoTrigger2 ();
     photoTrigger3 ();
+    photoTrigger4 ();
     burgerTL ();
     menuAnimation ();
    
@@ -194,7 +196,7 @@ function heroanimation(){
 // .from("#glow", {fadeout: (100), fadein: (100)})
 
 
-.from("#hero-content", {duration:2,alpha:0, scale:2}) 
+//.from("#hero-content", {duration:2,alpha:0, scale:2}) 
 
 //.from("#info",{duration:2,y:"+=500", alpha:0}) 
 
