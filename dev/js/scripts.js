@@ -6,6 +6,7 @@ import { CustomEase } from "gsap/CustomEase";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {scrollPage} from "./pageScroll"
+import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 
 
 
@@ -17,6 +18,7 @@ import {photoTrigger2} from"./scrollAnimation"
 import {photoTrigger3} from"./scrollAnimation"
 import {photoTrigger4} from"./scrollAnimation"
 import { burgerTL } from "./burgerAnimation"
+import { buttonClicks, buttonMouseEvents } from "./burgerAnimation"
 import {demo2} from "./burgerAnimation"
 import { displayWindowSize } from "./mobileResizing"
 import {menuAnimation} from "./mobileMenu";
@@ -36,6 +38,8 @@ window.addEventListener('load', function(){
     burgerTL ();
     menuAnimation ();
     demo2();
+    buttonClicks();
+    buttonMouseEvents();
    
 
 });
@@ -75,7 +79,7 @@ function checkScrolling(e) {
    
 const indexValue = [].indexOf.call(navButtons, e.target)
   if (indexValue != -1) {
-      scrollPage(indexValue);
+     scrollPage(indexValue);
   }
 }
 
@@ -83,7 +87,7 @@ const indexValue = [].indexOf.call(navButtons, e.target)
 
    
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrambleTextPlugin);
 
 
 
