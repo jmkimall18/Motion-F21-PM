@@ -8,6 +8,8 @@
     justify-content: right;
     align-items: center;
 
+   
+
     ul {
        
 
@@ -51,7 +53,8 @@
                  }
                  &:hover,
                  &:active {
-                    color:#EBD4B0;
+                    color:#EBD4B0
+                    ;
                  }
                  
              }
@@ -63,5 +66,10 @@
             border: none;
         }
     }
+
+    
+   
   }
+
+  
 }

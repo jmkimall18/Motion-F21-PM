@@ -5,6 +5,7 @@ import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import { CustomEase } from "gsap/CustomEase";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
+import {scrollPage} from "./pageScroll"
 
 
 
@@ -16,6 +17,7 @@ import {photoTrigger2} from"./scrollAnimation"
 import {photoTrigger3} from"./scrollAnimation"
 import {photoTrigger4} from"./scrollAnimation"
 import { burgerTL } from "./burgerAnimation"
+import {demo2} from "./burgerAnimation"
 import { displayWindowSize } from "./mobileResizing"
 import {menuAnimation} from "./mobileMenu";
 
@@ -33,6 +35,7 @@ window.addEventListener('load', function(){
     photoTrigger4 ();
     burgerTL ();
     menuAnimation ();
+    demo2();
    
 
 });
@@ -62,7 +65,7 @@ burgerButton.addEventListener("click", openCloseMenu);
 let navButtons = document.querySelectorAll(".nav-btns");
 
 for (const button of navButtons){
-    button.addEventListener("click", checkScrolling);
+   button.addEventListener("click", checkScrolling);
     button.addEventListener("click", openCloseMenu);
 }
 
@@ -70,10 +73,10 @@ for (const button of navButtons){
 
 function checkScrolling(e) {
    
-    const indexValue = [].indexOf.call(navButtons, e.target)
-    if (indexValue != -1) {
-        scrollPage(indexValue);
-    }
+const indexValue = [].indexOf.call(navButtons, e.target)
+  if (indexValue != -1) {
+      scrollPage(indexValue);
+  }
 }
 
 
