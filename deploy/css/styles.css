@@ -352,6 +352,10 @@ template {
 /* =============
     Base
 ============= */
+li {
+  list-style: none;
+}
+
 .gs-dev-tools {
   z-index: 1500;
 }
@@ -501,30 +505,12 @@ textarea {
   justify-content: right;
   align-items: center;
 }
-@media (min-width: 992px) {
-  #nav-container ul {
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 50px;
-    padding-right: 30px;
-  }
-}
-#nav-container ul li {
+#nav-container li {
   margin-bottom: 20px;
-  text-align: right;
-  padding-right: 30px;
+  text-align: center;
+  padding-right: 20px;
 }
-@media (min-width: 992px) {
-  #nav-container ul li {
-    align-items: center;
-    text-align: right;
-    padding-right: 30px;
-    display: flex;
-    margin-bottom: 0px;
-  }
-}
-#nav-container ul li button {
+#nav-container li button {
   background-color: transparent;
   color: black;
   font-family: "Work Sans";
@@ -536,15 +522,31 @@ textarea {
   border: none;
 }
 @media (min-width: 992px) {
-  #nav-container ul li button {
+  #nav-container li button {
     color: #000;
     font-size: 1.25rem;
   }
 }
-#nav-container ul li button:hover, #nav-container ul li button:active {
+#nav-container li button:hover, #nav-container li button:active {
   color: #EBD4B0;
 }
-#nav-container ul li li:last-child {
+@media (min-width: 768px) {
+  #nav-container li {
+    margin-bottom: 20px;
+    text-align: center;
+    padding-right: 100px;
+  }
+}
+@media (min-width: 992px) {
+  #nav-container li {
+    align-items: center;
+    text-align: right;
+    padding-right: 30px;
+    display: flex;
+    margin-bottom: 0px;
+  }
+}
+#nav-container li li:last-child {
   border: none;
 }
 
@@ -660,7 +662,7 @@ header > div #nav-container #card-4 {
   }
 }
 
-footer {
+#footer {
   grid-area: footer;
   background-color: #f5e4cc;
   display: grid;
@@ -668,14 +670,14 @@ footer {
   grid-template-areas: ". footer .";
   justify-content: center;
 }
-footer ul {
+#footer ul {
   font-size: 1.875rem;
   grid-area: footer;
   display: flex;
   justify-content: center;
   list-style-type: none;
 }
-footer ul li a {
+#footer ul li a {
   color: #000;
   display: flex;
   margin-top: 30px;
@@ -684,21 +686,21 @@ footer ul li a {
   font-size: 40px;
 }
 @media (min-width: 768px) {
-  footer ul li a {
+  #footer ul li a {
     font-size: 12px;
   }
 }
 @media (min-width: 992px) {
-  footer ul li a {
+  #footer ul li a {
     font-size: 12px;
   }
 }
 @media (min-width: 1200px) {
-  footer ul li a {
+  #footer ul li a {
     font-size: 14px;
   }
 }
-footer ul li a:hover, footer ul li a:active {
+#footer ul li a:hover, #footer ul li a:active {
   color: #B7A99C;
 }
 
