@@ -1,10 +1,10 @@
-// import { gsap } from "gsap";
-// import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { gsap } from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
-// gsap.registerPlugin(ScrollToPlugin);
+gsap.registerPlugin(ScrollToPlugin);
 
-// let idArray = ["#beans","#coffee","#info",];
+let idArray = ["#beans","#coffee","#info"];
 
-// export function scrollPage(index){
-//    gsap.to(window, {duration: 0, scrollTo:idArray[index]});
-// }
+export function scrollPage(index){
+   gsap.to(window, {duration: 3, scrollTo:idArray[index]});
+}
